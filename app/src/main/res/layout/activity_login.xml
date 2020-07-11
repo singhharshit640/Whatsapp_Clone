@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/ivWhatsappLogo"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/logo"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:id="@+id/etLoginEmailLayout"
+        android:hint="Email"
+        app:hintTextColor="#000"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/ivWhatsappLogo"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/etLoginEmail"
+            android:inputType="textEmailAddress"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsmedium"
+            android:textColor="#000"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:id="@+id/etLoginPasswordLayout"
+        android:hint="Password"
+        android:layout_marginRight="20dp"
+        app:hintTextColor="#000"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/etLoginEmailLayout"
+        android:layout_marginTop="7dp"
+        app:passwordToggleEnabled="true"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etLoginPassword"
+            android:inputType="textPassword"
+            android:fontFamily="@font/poppinsmedium"
+            android:textColor="#000"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tvForgetPassword"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etLoginPasswordLayout"
+        android:gravity="end"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="25dp"
+        android:textColor="#3F51B5"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppinsmedium"
+        android:clickable="true"
+        android:text="Forget Password?"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_below="@id/tvForgetPassword"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/buttons"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:fontFamily="@font/poppinsbold"/>
+
+    <TextView
+        android:id="@+id/tvNewUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New User?"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_below="@id/btnLogin"
+        android:fontFamily="@font/poppinsmedium"/>
+
+    <TextView
+        android:id="@+id/tvloginphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="or Login using your"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_below="@id/tvNewUser"
+        android:fontFamily="@font/poppinsmedium"/>
+
+    <Button
+        android:id="@+id/btnLoginUsingPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Phone"
+        android:layout_below="@id/tvloginphone"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/buttons"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:fontFamily="@font/poppinsbold"/>
+
+
+</RelativeLayout>

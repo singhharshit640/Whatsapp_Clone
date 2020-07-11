@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to WhatsApp"
+        android:fontFamily="@font/poppinsbold"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:textSize="23sp"
+        android:layout_marginTop="25dp"/>
+
+    <ImageView
+        android:id="@+id/ivWelcomeLogo"
+        android:layout_below="@id/tvWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/whatsappsignup"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:hint="Email"
+        android:id="@+id/etRegisterEmailLayout"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        app:hintTextColor="#000"
+        android:layout_below="@id/ivWelcomeLogo"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/etRegisterEmail"
+            android:inputType="textEmailAddress"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsmedium"
+            android:textColor="#000"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:hint="Password"
+        android:id="@+id/etRegisterPasswordLayout"
+        app:hintTextColor="#000"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/etRegisterEmailLayout"
+        android:layout_marginTop="7dp"
+        app:passwordToggleEnabled="true"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/etRegisterPassword"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:fontFamily="@font/poppinsmedium"
+            android:textColor="#000"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+     <Button
+        android:id="@+id/btnCreateAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Account"
+        android:layout_below="@id/etRegisterPasswordLayout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/buttons"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:fontFamily="@font/poppinsbold"/>
+
+    <TextView
+        android:id="@+id/tvAlreadyHaveAnAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Already have an Account?"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_below="@id/btnCreateAccount"
+        android:fontFamily="@font/poppinsmedium"/>
+
+</RelativeLayout>

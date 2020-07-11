@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "211836680486",
+    "firebase_url": "https://whatsapp-9cc3e.firebaseio.com",
+    "project_id": "whatsapp-9cc3e",
+    "storage_bucket": "whatsapp-9cc3e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:211836680486:android:ad6595844ce9e7dfba29e7",
+        "android_client_info": {
+          "package_name": "com.sleepingpandaaa.whatsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "211836680486-qp4c49mfjvs75sguhmeoo9pjp5bt06ge.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrWIdIFhBfLiWNl09VLrUPhJo7Ryw9qVQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "211836680486-qp4c49mfjvs75sguhmeoo9pjp5bt06ge.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
