@@ -18,7 +18,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/set_user_name"
+        android:id="@+id/setusername"
         android:fontFamily="@font/poppinsmedium"
         android:layout_below="@id/set_profile_image"
         android:inputType="text"
@@ -35,7 +35,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/set_profile_status"
-        android:layout_below="@id/set_user_name"
+        android:layout_below="@id/setusername"
         android:inputType="textMultiLine"
         android:fontFamily="@font/poppinsmedium"
         android:hint="Hey there! I am using PandaChat"
@@ -64,7 +64,7 @@
         android:padding="6dp"
         android:layout_marginTop="15dp"/>
 
-
+    <requestFocus />
 
 
 </RelativeLayout>
