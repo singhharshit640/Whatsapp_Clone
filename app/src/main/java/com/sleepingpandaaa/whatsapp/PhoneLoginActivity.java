@@ -104,9 +104,8 @@ public class PhoneLoginActivity extends AppCompatActivity {
 
             @Override
             public void onVerificationFailed(@NonNull FirebaseException e) {
-
-                loadingBar.dismiss();
                 Toast.makeText(PhoneLoginActivity.this, "Invalid Phone Number! Please enter correct phone number with your country code!", Toast.LENGTH_LONG).show();
+
                 SendVerificationCodeButton.setVisibility(View.VISIBLE);
                 InputPhoneNumber.setVisibility(View.VISIBLE);
 
@@ -121,7 +120,6 @@ public class PhoneLoginActivity extends AppCompatActivity {
                 mVerificationId = verificationId;
                 mResendToken = token;
 
-                loadingBar.dismiss();
                 Toast.makeText(PhoneLoginActivity.this, "Code has been sent, please check and verify!", Toast.LENGTH_SHORT).show();
 
                 SendVerificationCodeButton.setVisibility(View.INVISIBLE);
